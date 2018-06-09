@@ -1,0 +1,20 @@
+{
+  "CN": "server",
+
+  "key": {
+    "algo": "rsa",
+    "size": 2048
+  },
+
+  "names": [
+    {
+      "C": "US",
+      "ST": "DC",
+      "L": "DC",
+      "O": "dummy",
+      "OU": "dummy"
+    }
+  ],
+
+  "hosts": ["server.local"]
+}

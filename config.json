@@ -1,0 +1,39 @@
+{
+  "signing": {
+    "default": {
+      "expiry": "876000h",
+      "usages": ["digital signature"]
+    },
+
+    "profiles": {
+      "intermediate": {
+        "expiry": "876000h",
+        "usages": ["cert sign"],
+
+        "ca_constraint": {
+          "is_ca": true
+        }
+      },
+
+      "server": {
+        "expiry": "876000h",
+
+        "usages": [
+          "digital signature",
+          "key encipherment",
+          "server auth"
+        ]
+      },
+
+      "client": {
+        "expiry": "876000h",
+
+        "usages": [
+          "digital signature",
+          "key encipherment",
+          "client auth"
+        ]
+      }
+    }
+  }
+}
